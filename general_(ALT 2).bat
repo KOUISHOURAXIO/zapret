@@ -8,6 +8,8 @@ if "%ERRORLEVEL%"=="0" (
 )
 
 cd /d "%~dp0"
+call update_zapret.bat soft
+echo:
 
 set BIN=%~dp0bin\
 
