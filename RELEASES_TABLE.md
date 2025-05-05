@@ -1,5 +1,6 @@
 |  VERSION | DATE RELEASE |   TAGGET    |
 | -------- | ------------ | ----------- |
+|   1.7b   | May 22, 2025 | release     |
 |   1.4    | May 11, 2025 | release     |
 |   1.3    | May 5, 2025  | release     |
 |   1.2    | Apr 15, 2025 | release     |
