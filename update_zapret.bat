@@ -2,7 +2,7 @@
 setlocal EnableDelayedExpansion
 chcp 437 > nul
 
-set "CURRENT_VERSION=1.4"
+set "CURRENT_VERSION=1.7"
 set "GITHUB_URL=https://raw.githubusercontent.com/KOUISHOURAXIO/zapret/refs/heads/main/.service/version.txt"
 set "RELEASE_URL=https://github.com/KOUISHOURAXIO/zapret/releases"
 set "VERSION_FILE=version.txt"
