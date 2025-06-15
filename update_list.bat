@@ -9,8 +9,9 @@ if '%errorlevel%' NEQ '0' (
 )
 
 cd /d "%~dp0"
+set LIST=%~dp0lists\
 
 :: The need to update is checked once every half an hour, but they are updated only when the changes appear that must be reflected in them. on domains.lst
-curl -o "lists\list.txt" https://antifilter.download/list/domains.lst
+curl -o "%lists\%list.txt" https://antifilter.download/list/domains.lst
 sc query zapret | findstr "RUNNING PENDING" >nul && sc stop zapret >nul & timeout /t 2 & sc start zapret >nul
 exit
