@@ -20,7 +20,6 @@ start "zapret: general (ALT 1)" /min "%BIN%winws.exe" --wf-tcp=80,443 --wf-udp=4
 --filter-udp=443 --hostlist-exclude="%LIST%list-exclude.txt" --ipset="%LIST%list-ipset.txt" --hostlist="%LIST%list.txt" --hostlist="%LIST%list-additional.txt" --hostlist-auto-fail-time=3 --hostlist-auto-fail-threshold=1 --dpi-desync=fake --dpi-desync-repeats=6 --dpi-desync-fake-quic="%FAKE%quic_google.bin" --new ^
 --filter-udp=50000-50100 --dpi-desync=fake,disorder2 --dpi-desync-any-protocol --dpi-desync-cutoff=d3 --dpi-desync-repeats=6 --new ^
 --filter-tcp=80 --hostlist-exclude="%LIST%list-exclude.txt" --ipset="%LIST%list-ipset.txt" --hostlist="%LIST%list.txt" --hostlist="%LIST%list-additional.txt" --hostlist-auto-fail-time=3 --hostlist-auto-fail-threshold=1 --dpi-desync=fake,disorder2 --dpi-desync-autottl=2 --dpi-desync-fooling=md5sig --new ^
-
 --filter-tcp=443 --hostlist-exclude=%LIST%list-exclude.txt" --ipset="%LIST%list-ipset.txt" --hostlist="%LIST%list.txt" --hostlist="%LIST%list-additional.txt" --hostlist-auto-fail-time=3 --hostlist-auto-fail-threshold=1 --dpi-desync=fake,disorder2 --dpi-desync-autottl=2 --dpi-desync-repeats=6 --dpi-desync-fooling=badseq --dpi-desync-fake-tls="%FAKE%tls_google.bin" --new ^
 --filter-udp=443 --ipset="%LIST%list-cloudflare&amazon.txt" --dpi-desync=fake --dpi-desync-repeats=6 --dpi-desync-fake-quic="%FAKE%quic_google.bin" --new ^
 --filter-udp=50000-50100 --dpi-desync=fake,disorder2 --dpi-desync-any-protocol --dpi-desync-cutoff=d3 --dpi-desync-repeats=6 --new ^
